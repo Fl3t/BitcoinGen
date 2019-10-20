@@ -1,2 +1,2 @@
 # BitcoinChecker
-BTC PrivateKey Checker (MultiThreading)
+BTC PrivateKey Generator And Checker (MultiThreading)
