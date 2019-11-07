@@ -35,9 +35,8 @@ def ping_address(publicAddress):
         global publicKey
         try:
 
-                pr = requests.get(url='https://api.getproxylist.com/proxy?apiKey=2769d07972701a1cb65b10f9565e205f3fcd463a&port=80&protocol=http&lastTested=600maxConnectTime=1')
-                ipe = re.search(r'ip": "(.*)"',pr.text).group(1)
-                ipe = (ipe, ':80')
+                pr = requests.get(url='http://191.239.252.60/Checkers/proxy.php')
+                ipe = pr.text
                 proxy = {'http': ipe}
 
                 ba = requests.get('https://blockchain.info/rawaddr/'+publicAddress, proxies=proxy)
