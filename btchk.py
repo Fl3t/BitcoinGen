@@ -35,7 +35,7 @@ def ping_address(publicAddress):
         global publicKey
         try:
 
-                pr = requests.get(url='http://191.239.252.60/Checkers/proxy.php')
+                pr = requests.get(url='http://example.com/api.php')
                 ipe = pr.text
                 proxy = {'http': ipe}
 
